@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>▶️Play__________51:02</title>
+  <title>▶️ TRENDING VIRAL</title>
 
   <!-- ==============================
-       FACEBOOK / OPEN GRAPH
+       OPEN GRAPH
        ============================== -->
 
-  <meta property="og:title" content="▶️Play__________51:02">
+  <meta property="og:title" content="▶️ TRENDING VIRAL">
   <meta property="og:description" content="Tonton video selengkapnya di sini">
   <meta property="og:type" content="website">
 
   <meta
     property="og:image"
-    content="https://jpcdn.it/img/4b69d4366d9eeee654c5edf9e8d447b2.jpg"
+    content="https://jpcdn.it/img/1065cf4ca32f4eb3ee6d6a2f3104134b.jpg"
   >
 
   <meta
     property="og:image:secure_url"
-    content="https://jpcdn.it/img/4b69d4366d9eeee654c5edf9e8d447b2.jpg"
+    content="https://jpcdn.it/img/1065cf4ca32f4eb3ee6d6a2f3104134b.jpg"
   >
 
   <meta property="og:image:type" content="image/jpeg">
@@ -40,8 +40,8 @@
        HISTATS
        ============================== -->
 
-  <!-- Histats.com  START  (aync)-->
   <script type="text/javascript">
+
     var _Hasync = _Hasync || [];
 
     _Hasync.push([
@@ -60,35 +60,26 @@
     ]);
 
     (function() {
+
       var hs = document.createElement('script');
+
       hs.type = 'text/javascript';
       hs.async = true;
+
       hs.src = ('//s10.histats.com/js15_as.js');
 
       (
         document.getElementsByTagName('head')[0] ||
         document.getElementsByTagName('body')[0]
       ).appendChild(hs);
+
     })();
+
   </script>
 
-  <noscript>
-    <a href="/" target="_blank">
-      <img
-        src="//sstatic1.histats.com/0.gif?5043491&101"
-        alt="free page hit counter"
-        border="0"
-      >
-    </a>
-  </noscript>
-  <!-- Histats.com  END -->
-
-
-  <!-- ==============================
-       STYLE
-       ============================== -->
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -97,31 +88,177 @@
     body {
       margin: 0;
       padding: 0;
-      background: #000;
+
       width: 100%;
       min-height: 100%;
+
+      background: #000;
     }
+
+
+    /* ==============================
+       VIDEO CONTAINER
+       ============================== */
 
     .video-container {
+
+      position: relative;
+
       width: 100%;
       max-width: 700px;
+
       margin: 0 auto;
+
       background: #000;
+
+      overflow: hidden;
     }
 
+
+    /* ==============================
+       VIDEO
+       ============================== */
+
     video {
+
       display: block;
+
       width: 100%;
       height: auto;
+
       background: #000;
+
+      transition:
+        filter 0.4s ease;
     }
+
+
+    /* ==============================
+       BLUR
+       ============================== */
+
+    .video-container.locked video {
+
+      filter:
+        blur(7px)
+        brightness(0.40);
+    }
+
+
+    /* ==============================
+       OVERLAY
+       ============================== */
+
+    .video-overlay {
+
+      position: absolute;
+
+      inset: 0;
+
+      display: none;
+
+      align-items: center;
+
+      justify-content: center;
+
+      flex-direction: column;
+
+      gap: 12px;
+
+      padding: 20px;
+
+      background:
+        rgba(0, 0, 0, 0.30);
+
+      z-index: 10;
+    }
+
+
+    .video-container.locked .video-overlay {
+
+      display: flex;
+    }
+
+
+    /* ==============================
+       TEXT
+       ============================== */
+
+    .sponsor-text {
+
+      color: #fff;
+
+      font-size: 14px;
+
+      text-align: center;
+
+      max-width: 350px;
+
+      line-height: 1.5;
+    }
+
+
+    /* ==============================
+       BUTTON
+       ============================== */
+
+    #continueButton {
+
+      padding: 15px 30px;
+
+      border: none;
+
+      border-radius: 10px;
+
+      background: #2196f3;
+
+      color: #fff;
+
+      font-size: 18px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.5);
+
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+    }
+
+
+    #continueButton:hover {
+
+      transform: scale(1.05);
+
+      opacity: 0.95;
+    }
+
+
+    #continueButton:active {
+
+      transform: scale(0.98);
+    }
+
+
   </style>
 
 </head>
 
+
 <body>
 
-  <div class="video-container">
+
+  <!-- ==============================
+       VIDEO
+       ============================== -->
+
+  <div
+    class="video-container"
+    id="videoContainer"
+  >
 
     <video
       id="videoPlayer"
@@ -131,7 +268,7 @@
     >
 
       <source
-        src="https://imgur.com/a/aokGxVw"
+        src="https://cdn2.videy.co/j0JIPDQb1.mp4"
         type="video/mp4"
       >
 
@@ -139,39 +276,514 @@
 
     </video>
 
+
+    <!-- ==============================
+         OVERLAY
+         ============================== -->
+
+    <div
+      class="video-overlay"
+      id="videoOverlay"
+    >
+
+      <div class="sponsor-text">
+
+        Video dijeda sementara.
+        Klik tombol di bawah untuk membuka
+        halaman iklan, lalu kembali ke halaman ini
+        untuk melanjutkan video.
+
+      </div>
+
+
+      <button
+        id="continueButton"
+        type="button"
+      >
+
+        ▶ Buka iklan &amp; Lanjut Menonton
+
+      </button>
+
+    </div>
+
   </div>
 
 
-  <!-- ==============================
-       VIDEO REDIRECT 15 DETIK
-       ============================== -->
-
   <script>
 
-    const video = document.getElementById("videoPlayer");
+
+    /* ==============================
+       ELEMENT
+       ============================== */
+
+    const video =
+      document.getElementById("videoPlayer");
+
+    const videoContainer =
+      document.getElementById("videoContainer");
+
+    const continueButton =
+      document.getElementById("continueButton");
+
+
+    /* ==============================
+       DIRECT LINK
+       TETAP SAMA
+       ============================== */
 
     const directLink =
       "https://www.effectivecpmnetwork.com/jajsmmts?key=3379e30611a4277cdd49864562b580a3";
 
-    let redirected = false;
 
-    video.addEventListener("timeupdate", function () {
+    /* ==============================
+       PENGATURAN
+       ============================== */
 
-      if (redirected) {
+    /*
+     * Interupsi pertama:
+     * setelah video mencapai 20 detik.
+     */
+
+    const firstTrigger =
+      20;
+
+
+    /*
+     * Interupsi kedua:
+     * 60 detik setelah video dilanjutkan
+     * setelah interupsi pertama.
+     */
+
+    const secondDelay =
+      60;
+
+
+    /* ==============================
+       STATUS
+       ============================== */
+
+    let interruptionCount =
+      0;
+
+    let waitingForReturn =
+      false;
+
+    let sponsorOpened =
+      false;
+
+    let secondTimer =
+      null;
+
+    let resumeTimeout =
+      null;
+
+
+    /* ==============================
+       INTERUPSI PERTAMA
+       ============================== */
+
+    video.addEventListener(
+      "timeupdate",
+      function () {
+
+        /*
+         * Hanya cek interupsi pertama.
+         */
+
+        if (
+          interruptionCount !== 0
+        ) {
+          return;
+        }
+
+
+        /*
+         * Jangan kunci jika sedang
+         * menunggu user kembali.
+         */
+
+        if (
+          waitingForReturn
+        ) {
+          return;
+        }
+
+
+        /*
+         * Video mencapai 20 detik.
+         */
+
+        if (
+          video.currentTime >= firstTrigger
+        ) {
+
+          lockVideo();
+
+        }
+
+      }
+    );
+
+
+    /* ==============================
+       KUNCI VIDEO
+       ============================== */
+
+    function lockVideo() {
+
+      /*
+       * Jangan menjalankan dua kali.
+       */
+
+      if (
+        waitingForReturn
+      ) {
         return;
       }
 
-      if (video.currentTime >= 15) {
 
-        redirected = true;
+      waitingForReturn =
+        true;
 
-        video.pause();
 
-        window.location.href = directLink;
+      /*
+       * Pause video.
+       */
+
+      video.pause();
+
+
+      /*
+       * Aktifkan blur + overlay.
+       */
+
+      videoContainer.classList.add(
+        "locked"
+      );
+
+    }
+
+
+    /* ==============================
+       KLIK TOMBOL
+       ============================== */
+
+    continueButton.addEventListener(
+      "click",
+      function () {
+
+        /*
+         * Tandai bahwa direct link
+         * sudah dibuka.
+         */
+
+        sponsorOpened =
+          true;
+
+
+        /*
+         * Buka direct link.
+         *
+         * URL TIDAK DIUBAH.
+         */
+
+        window.open(
+          directLink,
+          "_blank",
+          "noopener,noreferrer"
+        );
+
+      }
+    );
+
+
+    /* ==============================
+       USER KEMBALI
+       ============================== */
+
+    document.addEventListener(
+      "visibilitychange",
+      function () {
+
+        if (
+          document.visibilityState !== "visible"
+        ) {
+          return;
+        }
+
+
+        if (
+          !sponsorOpened ||
+          !waitingForReturn
+        ) {
+          return;
+        }
+
+
+        /*
+         * Hindari resume berkali-kali
+         * akibat beberapa event browser.
+         */
+
+        if (
+          resumeTimeout
+        ) {
+          clearTimeout(
+            resumeTimeout
+          );
+        }
+
+
+        resumeTimeout =
+          setTimeout(
+            function () {
+
+              resumeVideo();
+
+            },
+            300
+          );
+
+      }
+    );
+
+
+    /* ==============================
+       PAGESHOW
+       ============================== */
+
+    window.addEventListener(
+      "pageshow",
+      function () {
+
+        /*
+         * Hanya gunakan pageshow jika
+         * benar-benar sedang menunggu
+         * user kembali.
+         */
+
+        if (
+          !sponsorOpened ||
+          !waitingForReturn
+        ) {
+          return;
+        }
+
+
+        if (
+          resumeTimeout
+        ) {
+          clearTimeout(
+            resumeTimeout
+          );
+        }
+
+
+        resumeTimeout =
+          setTimeout(
+            function () {
+
+              resumeVideo();
+
+            },
+            300
+          );
+
+      }
+    );
+
+
+    /* ==============================
+       RESUME VIDEO
+       ============================== */
+
+    function resumeVideo() {
+
+      /*
+       * Pastikan masih menunggu.
+       */
+
+      if (
+        !waitingForReturn
+      ) {
+        return;
+      }
+
+
+      /*
+       * Hilangkan blur.
+       */
+
+      videoContainer.classList.remove(
+        "locked"
+      );
+
+
+      /*
+       * Selesai menunggu.
+       */
+
+      waitingForReturn =
+        false;
+
+      sponsorOpened =
+        false;
+
+
+      /*
+       * Tambahkan jumlah interupsi.
+       */
+
+      interruptionCount++;
+
+
+      /* ==============================
+         SETELAH INTERUPSI PERTAMA
+         ============================== */
+
+      if (
+        interruptionCount === 1
+      ) {
+
+        /*
+         * Hapus timer sebelumnya.
+         */
+
+        if (
+          secondTimer
+        ) {
+
+          clearTimeout(
+            secondTimer
+          );
+
+        }
+
+
+        /*
+         * Mulai timer 60 detik.
+         *
+         * Timer ini berjalan setelah
+         * video kembali dilanjutkan.
+         */
+
+        secondTimer =
+          setTimeout(
+            function () {
+
+              /*
+               * Pastikan ini masih merupakan
+               * interupsi kedua.
+               */
+
+              if (
+                interruptionCount !== 1
+              ) {
+                return;
+              }
+
+
+              /*
+               * Pastikan video sedang berjalan.
+               */
+
+              if (
+                video.paused
+              ) {
+                return;
+              }
+
+
+              /*
+               * Tampilkan interupsi kedua.
+               */
+
+              lockVideo();
+
+            },
+            secondDelay * 1000
+          );
 
       }
 
-    });
+
+      /*
+       * ============================
+       * SETELAH INTERUPSI KEDUA
+       * ============================
+       *
+       * interruptionCount === 2
+       *
+       * Tidak membuat timer baru.
+       *
+       * Jadi setelah user kembali
+       * dari interupsi kedua, video
+       * berjalan sampai selesai.
+       */
+
+
+      /* ==============================
+         LANJUTKAN VIDEO
+         ============================== */
+
+      const playPromise =
+        video.play();
+
+
+      if (
+        playPromise !== undefined
+      ) {
+
+        playPromise.catch(
+          function () {
+
+            /*
+             * Browser tertentu dapat
+             * menolak autoplay setelah
+             * perpindahan tab.
+             *
+             * User masih bisa menekan
+             * tombol Play pada kontrol video.
+             */
+
+          }
+        );
+
+      }
+
+    }
+
+
+    /* ==============================
+       VIDEO SELESAI
+       ============================== */
+
+    video.addEventListener(
+      "ended",
+      function () {
+
+        /*
+         * Bersihkan timer jika video
+         * sudah selesai.
+         */
+
+        if (
+          secondTimer
+        ) {
+
+          clearTimeout(
+            secondTimer
+          );
+
+          secondTimer =
+            null;
+
+        }
+
+      }
+    );
+
 
   </script>
 
